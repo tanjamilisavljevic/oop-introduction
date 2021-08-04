@@ -23,7 +23,6 @@ class Drink
     }
 }
 
-
 /* EXERCISE 1
 Create a class beverage.
 Create the properties color (string), price (float) and temperature (string) and also foresee a construct.
@@ -35,3 +34,6 @@ Instantiate an object which represents cola. Make sure that the color is set to 
 print the temperature on the screen.
 USE TYPEHINTING EVERYWHERE!
 */
+
+
+

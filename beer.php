@@ -6,14 +6,17 @@ class Beer extends Drink
     public string $name;
     public float $alcoholPercentage;
 
-    public function __construct( string $name, float $alcoholPercentage)
+    public function __construct(string $color, float $price, string $temperature, string $name, float $alcoholPercentage)
     {
-        $this->name = $name;
-        $this->alcoholPercentage = $alcoholPercentage;
+        parent::__construct($color, $price, $temperature = 'cold');
+        $this -> name = $name;
+        $this -> alcoholPercentage = $alcoholPercentage;
+
     }
     public function getAlcoholPercentage ()
     {
-        return $this->alcoholPercentage;
+        echo $this->alcoholPercentage;
+        echo "<br>";
     }
 };
 

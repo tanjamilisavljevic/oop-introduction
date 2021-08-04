@@ -12,4 +12,9 @@ require 'beer.php';
 $cola = new Drink('black', 2);
 $cola -> getInfo();
 
+$duvel = new Beer('blond', 3.5, '', 'Duvel', 8.5);
 
+$duvel -> getAlcoholPercentage();
+echo $duvel->alcoholPercentage . '<br>';
+echo $duvel->color . '<br>';
+$duvel -> getInfo();

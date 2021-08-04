@@ -14,10 +14,12 @@ require 'private.php';
 
 $duvel = new Beer('blond', 3.5, '', 'Duvel', 8.5);
 
-$duvel -> getAlcoholPercentage();
-echo $duvel -> getAlcoholPercentage();
-echo $duvel-> makeColorAccessible() . '<br>';
+$duvel -> declareAlcoholPercentage();
+echo $duvel -> declareAlcoholPercentage();
+echo $duvel-> getColorAccessible() . '<br>';
 $duvel -> getInfo();
 
-
 $duvel->setColor('light');
+
+$duvel -> getBeerInfo();
+

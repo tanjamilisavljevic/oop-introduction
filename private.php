@@ -40,33 +40,44 @@ class Beer extends Drink
     public function __construct(string $color, float $price, string $temperature, string $name, float $alcoholPercentage)
     {
         parent::__construct($color, $price, $temperature = 'cold');
-        $this -> name = $name;
-        $this -> alcoholPercentage = $alcoholPercentage;
+        $this->name = $name;
+        $this->alcoholPercentage = $alcoholPercentage;
 
     }
-    public function getAlcoholPercentage ()
+
+    public function declareAlcoholPercentage()
     {
         echo $this->alcoholPercentage;
         echo "<br>";
     }
-    public function makeNameAccessible(): string
+
+    public function getName(): string
     {
-        return $this -> name;
+        return $this->name;
     }
-    public function makeAlcoholPercentageAccessible(): float
+
+    public function getAlcoholPercentage(): float
     {
-        return $this -> alcoholPercentage;
+        return $this->alcoholPercentage;
     }
-    public function makeColorAccessible(): string
+
+    public function getColorAccessible(): string
     {
-        return $this -> color;
+        return $this->color;
     }
+
     function setColor($color)
     {
-        $this->color=$color;
+        $this->color = $color;
         echo $color;
     }
+
+    private function beerInfo()
+    {
+        echo '<br>' ."Hi i'm $this->name and have an alcohol percentage of $this->alcoholPercentage and I have a $this->color color.";
+    }
+    public function getBeerInfo(){
+       echo $this -> beerInfo();
+    }
 }
-
-
 

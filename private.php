@@ -61,6 +61,11 @@ class Beer extends Drink
     {
         return $this -> color;
     }
+    function setColor($color)
+    {
+        $this->color=$color;
+        echo $color;
+    }
 }
 
 

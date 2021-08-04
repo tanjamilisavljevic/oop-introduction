@@ -18,3 +18,6 @@ $duvel -> getAlcoholPercentage();
 echo $duvel -> getAlcoholPercentage();
 echo $duvel-> makeColorAccessible() . '<br>';
 $duvel -> getInfo();
+
+
+$duvel->setColor('light');

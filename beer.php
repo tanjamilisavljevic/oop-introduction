@@ -11,6 +11,10 @@ class Beer extends Drink
         $this->name = $name;
         $this->alcoholPercentage = $alcoholPercentage;
     }
+    public function getAlcoholPercentage ()
+    {
+        return $this->alcoholPercentage;
+    }
 };
 
 /* EXERCISE 2

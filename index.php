@@ -12,5 +12,4 @@ require 'beer.php';
 $cola = new Drink('black', 2);
 $cola -> getInfo();
 
-$whatebever = new Beer('isbeer', 2);
-$whatebever -> getInfo();
+

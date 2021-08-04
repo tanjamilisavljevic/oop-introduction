@@ -13,12 +13,11 @@ Make sure that you use the variables and not just this text line.
 Print this method on the screen on a new line.
 USE TYPEHINTING EVERYWHERE!
 */
-
 class Drink
 {
-    private string $color;
-    private float $price;
-    private string $temperature;
+    protected string $color;
+    protected float $price;
+    protected string $temperature;
 
     public function __construct (string $color, float $price, string $temperature= "cold")
     {
@@ -31,7 +30,7 @@ class Drink
     {
         echo "This beverage is {$this->temperature} and {$this->color}. <br>";
     }
-}
+};
 
 class Beer extends Drink
 {
@@ -45,14 +44,24 @@ class Beer extends Drink
         $this -> alcoholPercentage = $alcoholPercentage;
 
     }
+    public function getAlcoholPercentage ()
+    {
+        echo $this->alcoholPercentage;
+        echo "<br>";
+    }
+    public function makeNameAccessible(): string
+    {
+        return $this -> name;
+    }
+    public function makeAlcoholPercentageAccessible(): float
+    {
+        return $this -> alcoholPercentage;
+    }
+    public function makeColorAccessible(): string
+    {
+        return $this -> color;
+    }
+}
 
-//    public function getName(): string
-//    {
-//        echo $this -> name;
-//    }
-//    public function getAlcoholPercentage(): float
-//    {
-//        echo $this -> alcoholPercentage;
-//    }
 
-};
+

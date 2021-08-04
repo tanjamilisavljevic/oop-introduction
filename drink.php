@@ -13,8 +13,10 @@ class Drink
         $this -> temperature = 'cold';
     }
 
-
-
+    public function getInfo ()
+    {
+        echo 'This beverage is {$this->temperature} and {$this->color} <br>.';
+    }
 }
 
 

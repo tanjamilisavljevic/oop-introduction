@@ -7,6 +7,8 @@ error_reporting(E_ALL);
 
 require 'drink.php';
 
+$cola = new Drink('black', 2);
+$cola -> getInfo();
 
 /* EXERCISE 1
 Create a class beverage.

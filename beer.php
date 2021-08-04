@@ -17,7 +17,6 @@ class Beer extends Drink
     {
         echo $this->alcoholPercentage;
         echo "<br>";
-        return $this->alcoholPercentage;
     }
 };
 

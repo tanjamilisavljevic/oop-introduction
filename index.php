@@ -8,16 +8,14 @@ error_reporting(E_ALL);
 require 'drink.php';
 require 'beer.php';
 
+
 $cola = new Drink('black', 2);
 $cola -> getInfo();
 
 $duvel = new Beer('blond', 3.5, '', 'Duvel', 8.5);
 
 $duvel -> getAlcoholPercentage();
-echo $duvel -> getAlcoholPercentage;
-echo $duvel -> alcoholPercentage . '<br>';
-echo $duvel -> $this -> color . '<br>';
+echo $duvel -> getAlcoholPercentage();
+echo $duvel->alcoholPercentage . '<br>';
+echo $duvel-> color . '<br>';
 $duvel -> getInfo();
-
-
-

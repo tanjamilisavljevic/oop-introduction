@@ -7,7 +7,9 @@ error_reporting(E_ALL);
 
 //require 'drink.php';
 //require 'beer.php';
-require 'private.php';
+//require 'private.php';
+require 'protected.php';
+
 
 //$cola = new Drink('black', 2);
 //$cola -> getInfo();
